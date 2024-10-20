@@ -3,20 +3,28 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 100vh;
-    min-width: 100vw;
+    min-height: 90vh;
+    min-width: 90vw;
     margin: 0;
-    padding: 0;
+    padding: 20px;
     font-family: "Creepster", system-ui;
     font-weight: 400;
     font-style: normal;
 }
 
+h2 {
+    color: purple;
+}
+
+h1 {
+    color: white;
+}
 
 header {
     display: flex;
-    margin: 20px 20px ;
-    height: 40px;
+    margin-bottom: 20px ;
+    height: 43px;
+    font-size: 40px;
     justify-content: center;
     align-items: center;
     background-color: rgb(103, 2, 154);
@@ -49,7 +57,7 @@ img:hover {
 }
 
 button{
-    border-radius: 15px;
+    border-radius: 4px;
     background-color: burlywood;
 
 }
@@ -58,6 +66,71 @@ button:hover {
     cursor: pointer;
     background-color: rgb(88, 1, 195);
     color: orange;
-    border-radius: 15px;
+    border-radius: 4px;
+
+}
+
+img.skelly-hover:hover {
+    content: url(images/skeletonhover.webp);
+    transition: opacity 0.5s ease;
+
+} 
+
+img.cat-hover:hover {
+    content: url(images/cathover.webp);
+}
+
+img.dog-hover:hover {
+    content: url(images/dogskellyhover.webp);
+    transition: 1s ease-in-out;
+}
+
+/*
+.dog-hover:hover {
+    background-image: url(images/dogskellyhover.webp);
+    height: 100px;
+    width: 100px;
+    transition: 0.5s ease-in-out;
+} */
+
+footer {
+    display: flex;
+    background-color: black;
+    position: sticky;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+
+
+
+@media (min-width: 1200px) {
+    .product img {
+        width: 210px;
+        height: 190px;
+        border-radius: 10px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    p {
+        font-size: 30px;
+    }
+
+    button {
+        font-size: 20px;
+        height: 60px;
+        width: 140px;
+        border-radius: 10px;
+
+    }
 
 }
